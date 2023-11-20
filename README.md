@@ -11,9 +11,9 @@ Python, django, DRF, docker, nginx, gunicorn, js, react, html, css
 ## Что нужно сделать
 
 touch .env
-<br>
 
-Переменные env:
+## Переменные env:
+
 
 POSTGRES_USER=
 
