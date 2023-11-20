@@ -11,7 +11,7 @@ secretkey = os.getenv('SECRET_KEY')
 if secretkey:
     SECRET_KEY = secretkey
 else:
-    SECRET_KEY = ''
+    SECRET_KEY = 'fortests'
 
 if os.getenv('DEV'):
     DEBUG = True
