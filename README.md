@@ -11,9 +11,9 @@ Python, django, DRF, docker, nginx, gunicorn, js, react, html, css
 ## Что нужно сделать
 
 touch .env
+<br>
 
 Переменные env:
-
 
 POSTGRES_USER=
 
@@ -31,6 +31,7 @@ DEV='dev'
 
 ALLOWED_HOSTS=
 
+## Запуск проекта
 
 docker-compose -f docker-compose.production.yml up --build
 
