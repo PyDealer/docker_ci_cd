@@ -14,11 +14,7 @@ if os.getenv('DEV'):
 else:
     DEBUG = False
 
-allowed_hosts = os.getenv('ALLOWED_HOSTS')
-if allowed_hosts:
-    ALLOWED_HOSTS = allowed_hosts.split(',')
-else:
-    ALLOWED_HOSTS = []
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS').split(',')
 
 INSTALLED_APPS = [
     'django.contrib.admin',
