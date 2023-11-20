@@ -24,6 +24,9 @@ ALLOWED_HOSTS=
 
 docker-compose -f docker-compose.production.yml up --build
 
+## Автор:
+PyDealer
+
 ## Как проверить работу с помощью автотестов
 
 В корне репозитория создайте файл tests.yml со следующим содержимым:
