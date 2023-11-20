@@ -1,8 +1,28 @@
 [![Main Kittygram workflow](https://github.com/PyDealer/kittygram_final/actions/workflows/main.yml/badge.svg)](https://github.com/PyDealer/kittygram_final/actions/workflows/main.yml)
 #  Как работать с репозиторием финального задания
+
+## Что такое kyttigram
+
+Киттиграм - это инстаграм для ваших кошечек, и не только. Можно постить фотки, выбирать их цвет, указывать год рождения и имя любимого питомца.
+
+## Стек:
+Python, django, DRF, docker, nginx, gunicorn, js, react, html, css
+
 ## Что нужно сделать
 
-Настроить запуск проекта Kittygram в контейнерах и CI/CD с помощью GitHub Actions
+touch .env
+
+Переменные env:
+POSTGRES_USER=
+POSTGRES_PASSWORD=
+POSTGRES_DB=
+DB_HOST=
+DB_PORT=
+SECRET_KEY= #django_secret_key
+DEV='dev'
+ALLOWED_HOSTS=
+
+docker-compose -f docker-compose.production.yml up --build
 
 ## Как проверить работу с помощью автотестов
 
