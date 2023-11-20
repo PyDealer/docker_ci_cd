@@ -1,5 +1,5 @@
-#  Как работать с репозиторием финального задания
 [![Main Kittygram workflow](https://github.com/PyDealer/kittygram_final/actions/workflows/main.yml/badge.svg)](https://github.com/PyDealer/kittygram_final/actions/workflows/main.yml)
+#  Как работать с репозиторием финального задания
 ## Что нужно сделать
 
 Настроить запуск проекта Kittygram в контейнерах и CI/CD с помощью GitHub Actions
