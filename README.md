@@ -13,16 +13,16 @@ Python, django, DRF, docker, nginx, gunicorn, js, react, html, css
 touch .env
 
 Переменные env:
-POSTGRES_USER=
-POSTGRES_PASSWORD=
-POSTGRES_DB=
-DB_HOST=
-DB_PORT=
-SECRET_KEY= #django_secret_key
-DEV='dev'
-ALLOWED_HOSTS=
-
-docker-compose -f docker-compose.production.yml up --build
+POSTGRES_USER=<br>
+POSTGRES_PASSWORD=<br>
+POSTGRES_DB=<br>
+DB_HOST=<br>
+DB_PORT=<br>
+SECRET_KEY= #django_secret_key<br>
+DEV='dev'<br>
+ALLOWED_HOSTS=<br>
+<br>
+docker-compose -f docker-compose.production.yml up --build<br>
 
 ## Автор:
 PyDealer
