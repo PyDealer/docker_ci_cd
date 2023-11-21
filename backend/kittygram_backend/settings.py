@@ -19,7 +19,7 @@ else:
     DEBUG = False
 
 allowed_hosts = os.getenv('ALLOWED_HOSTS')
-if allowed_hosts:
+if os.getenv('DEV'):
     ALLOWED_HOSTS = allowed_hosts.split(',')
 else:
     ALLOWED_HOSTS = []
