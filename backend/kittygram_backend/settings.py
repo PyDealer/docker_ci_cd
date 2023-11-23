@@ -7,11 +7,22 @@ load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = os.getenv('SECRET_KEY', default='fortests')
+secretkey = os.getenv('SECRET_KEY')
+if secretkey:
+    SECRET_KEY = secretkey
+else:
+    SECRET_KEY = 'fortests'
 
-DEBUG = os.getenv('DEBUG', default=False)
+if os.getenv('DEV'):
+    DEBUG = True
+else:
+    DEBUG = False
 
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', default=['*'])
+allowed_hosts = os.getenv('ALLOWED_HOSTS')
+if os.getenv('DEV'):
+    ALLOWED_HOSTS = allowed_hosts.split(',')
+else:
+    ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -95,7 +106,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'Europe/Moscow'
+TIME_ZONE = 'Etc/UTC'
 
 USE_I18N = True
 
